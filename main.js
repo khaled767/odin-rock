@@ -67,6 +67,8 @@ function playRound(humanChoice, computerChoice) {
 
 // write playGame to play 5 rounds
 function playGame(){
+    let humanChoice= getHumanChoice();
+     let computerChoice= getComputerChoice();
     for(let i= 1; i < 6; i++){
         humanChoice = getHumanChoice() //here was my fault 
         computerChoice = getComputerChoice() // I didn't give start frish
@@ -86,8 +88,7 @@ function playGame(){
         }
         console.log(`play Round ${i} computerScore is: ${computerScore} humanScore is: ${humanScore}`)
     }
-     let humanChoice= getHumanChoice();
-     let computerChoice= getComputerChoice();
+     
     
 }
 playGame()
