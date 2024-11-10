@@ -34,6 +34,7 @@
             font-size: 30px;
         }
         #resultDisplay{
+            display: none;
             font-size: 50px;
             margin-top: 20px;
         }
@@ -42,6 +43,12 @@
         }
         .redText{
             color:rgb(224, 7, 7)
+        }
+        .scoreDisplay{
+            font-size: 25px;
+        }
+        #playerScoreDisplay{
+            margin-left: 40px;
         }
     </style>
 </head>
@@ -57,11 +64,15 @@
     <div id="computerDisplay">Computer: </div>
     <div id="resultDisplay">It's A Tie!</div>
 
+    
     <div class="scoreDisplay">Player Score:
         <span id="playerScoreDisplay">0</span>
     </div>
     <div class="scoreDisplay">Computer Score:
         <span id="computerScoreDisplay">0</span>
+    </div>
+    <div id="restGame">
+        
     </div>
     <script src="main.js"></script>
 </body>
